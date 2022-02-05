@@ -1,0 +1,61 @@
+version: "3.0"
+
+intents:
+  - affirm
+  - deny
+  - inform
+  - get_help
+
+responses:
+  utter_explain_skill:
+    - text: "The spellcast manager skill helps you and your friends with spellcasting during your d n d games."
+
+  utter_ask_option:
+    - text: "Would you like to know more about option one, two, three or four?"
+
+  utter_which_option:
+    - text: "Option One, Two, Three or Four"
+
+  utter_reask_option:
+    - text: "would you like to know more about a different option?"
+
+  utter_option_one:
+    - text: "You can let me tell you about all the details for a certain spell. For example you can just tell me: Tell me all the details to the spell bless and i will tell you everything i know about this spell, yes?"
+
+  utter_option_two:
+    - text: "I can guide you through the complete casting procedure for any spell. Just tell me: Assist me with casting guardian of faith. And together we will cast this mighty spell."
+
+  utter_option_three:
+    - text: "You can ask me about a summary for a spell. For example you can just tell me: Read me the ruletext for the spell incendiary cloud"
+
+  utter_option_four:
+    - text: "You can ask me about a specific detail for a spell. For example you can just tell me: I want to know something about the spell fireball Then i will ask you about what exact detail you want to know and we will have a rather good time."
+
+  utter_option_invalid:
+    - text: "Pardon me, I understood {option}! You have to choose between Option One, Two, Three or Four for this to work out."
+
+  utter_goodbye:
+    - text: "Have a nice day!"
+
+actions:
+  - read_selected_option_decription
+
+
+entities:
+  - option
+
+slots:
+  option:
+    type: categorical
+    values:
+      - one
+      - two
+      - three
+      - four
+    mappings:
+    - type: from_entity
+      entity: option
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

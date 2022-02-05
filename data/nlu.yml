@@ -1,0 +1,40 @@
+version: "3.0"
+
+nlu:
+- intent: get_help
+  examples: |
+    - what does spellcastmanager do
+    - what does the spellcast manager do
+    - what does spellcastmanager
+    - what can i do with spellcastmanager
+    - i need help with spellcastmanager
+    - i need help with the spellcastmanager
+    - how do i use the spellcastmanager
+    - spellcastmanager help
+    - spellcatmanager help please
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: inform
+  examples: |
+    - [one](option)
+    - [two](option)
+    - [three](option)
+    - [four](option)
