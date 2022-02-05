@@ -11,7 +11,7 @@ class ActionReadSelectedOptionDescription(Action):
     """
    
     def name(self) -> Text:
-        return "read_selected_option_decription"
+        return "read_selected_option_description"
   
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
@@ -32,6 +32,6 @@ class ActionReadSelectedOptionDescription(Action):
         elif selected_option == "four":
             dispatcher.utter_message(response="utter_option_four")
         else:
-            dispatcher.utter_message(response="utter_option_invalid", option=selected_option)
+            dispatcher.utter_message(response="utter_option_invalid")
  
         return [AllSlotsReset()]

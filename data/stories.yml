@@ -10,5 +10,20 @@ stories:
   - intent: affirm
   - action: utter_which_option
   - intent: inform
-  - action: read_selected_option_decription
+  - action: read_selected_option_description
   - action: utter_reask_option
+
+- story: affirm another option
+  steps:
+  - action: utter_reask_option
+  - intent: affirm
+  - action: utter_which_option
+  - intent: inform
+  - action: read_selected_option_description
+  - action: utter_reask_option
+
+- story: deny another option
+  steps:
+  - action: utter_reask_action
+  - intent: deny
+  - action: utter_goodbye
