@@ -32,8 +32,8 @@ responses:
 
   utter_option_two:
     - text: "I can guide you through the complete casting procedure for any spell. Just tell me: Assist me with casting guardian of faith. And together we will cast this mighty spell."
-    - text: "If you ask me nicely, I will guide you through the process of casting a specific spell. Just say: I cast the spell Firebal.l" 
-    - text: "If you need guidance, while casting a spell, just say: I cast the spell counterspell and i will tell you what you need to know."
+    - text: "I can help you cast your spell. Just say: I cast the spell fireball. Just follow my lead." 
+    - text: "We can cast your spell together. Try it by saying: I cast eldritch blast."
 
   utter_option_three:
     - text: "You can ask me about a summary for a spell. For example you can just tell me: Read me the ruletext for the spell incendiary cloud."
@@ -42,7 +42,7 @@ responses:
 
   utter_option_four:
     - text: "You can ask me about a specific detail for a spell. For example you can just tell me: I want to know something about the spell fireball Then i will ask you about what exact detail you want to know and we will have a rather good time."
-    - text: "If you are interested in just one specific detail about a spell, just say: Give me some Information about the spell Fireball. I will then read it to you."
+    - text: "You could ask about the specifics for a spell by saying: I would like some infos about the spell bless. Just follow my remaining questions and we won't have any problem."
     - text: "I will tell you about a single detail about a specific spell, if you ask nicely. Just say: Provide me with some Information about the spell shocking grasp."
 
   utter_option_invalid:
@@ -51,7 +51,7 @@ responses:
     - text: "I am verry sorry, but I did in fact not understand you correctly, please just say One, Two, Three or Four"
 
   utter_goodbye:
-    - text: "Have a nice day!"
+    - text: "Have a nice day, Sir!"
     - text: "Glad to be of service!"
     - text: "It was an honour, Sir."
 

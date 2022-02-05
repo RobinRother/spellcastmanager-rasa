@@ -1,0 +1,80 @@
+stories:
+- story: user says what does spellcastmanager do
+  steps:
+  - user: |
+      what does spellcastmanager do
+    intent: get_help
+  - action: utter_explain_skill
+  - action: utter_ask_option
+
+- story: user says spellcastmanager help
+  steps:
+  - user: |
+      spellcastmanager help
+    intent: get_help
+  - action: utter_explain_skill
+  - action: utter_ask_option
+
+- story: user says What do I do with spellcastmanager
+  steps:
+  - user: |
+      What do I do with spellcastmanager
+    intent: get_help
+  - action: utter_explain_skill
+  - action: utter_ask_option
+
+- story: user says help
+  steps:
+  - user: |
+      help
+    intent: get_help
+  - action: utter_explain_skill
+  - action: utter_ask_option
+
+- story: user says Spellcastmanager
+  steps:
+  - user: |
+      Spellcastmanager
+    intent: get_help
+  - action: utter_explain_skill
+  - action: utter_ask_option
+
+- story: user says help Spell
+  steps:
+  - user: |
+      help Spell
+    intent: get_help
+  - action: utter_explain_skill
+  - action: utter_ask_option
+
+- story: user says I would very much like some assistance please
+  steps:
+  - user: |
+      I would very much like some assistance please
+    intent: get_help
+  - action: utter_explain_skill
+  - action: utter_ask_option
+
+- story: I need assistance
+  steps:
+  - user: |
+      I need assistance
+    intent: get_help
+  - action: utter_explain_skill
+  - action: utter_ask_option
+
+- story: user says How does this Thing work
+  steps:
+  - user: |
+      How does this Thing work
+    intent: get_help
+  - action: utter_explain_skill
+  - action: utter_ask_option
+
+- story: user says What ca i do wit this spellcast manager thing
+  steps:
+  - user: |
+      What ca i do wit this spellcast manager thing
+    intent: get_help
+  - action: utter_explain_skill
+  - action: utter_ask_option
