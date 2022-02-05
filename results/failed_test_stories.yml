@@ -1,0 +1,7 @@
+version: "3.0"
+stories:
+- story: user says How does this Thing work (./tests/test_stories.yml)
+  steps:
+  - intent: get_help  # predicted: nlu_fallback: How does this Thing work
+  - action: utter_explain_skill
+  - action: utter_ask_option
